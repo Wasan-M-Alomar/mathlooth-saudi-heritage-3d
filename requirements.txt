@@ -1,0 +1,14 @@
+modal
+torch
+transformers
+diffusers
+accelerate
+peft
+safetensors
+huggingface_hub
+rembg
+onnxruntime
+pymcubes
+trimesh
+pillow
+numpy
