@@ -10,10 +10,16 @@
 ![TripoSG](https://img.shields.io/badge/TripoSG-3D%20Reconstruction-4B2C82?style=flat-square)
 ![Qwen3](https://img.shields.io/badge/Qwen3--8B-Knowledge%20Graph-0E6B4F?style=flat-square)
 ![Modal](https://img.shields.io/badge/Deployed%20on-Modal%20GPUs-8B5E3C?style=flat-square)
+![Award](https://img.shields.io/badge/%F0%9F%8F%86%203rd%20Place-CCIS%20Graduation%20Projects-C9A227?style=flat-square)
+![Heritage Commission](https://img.shields.io/badge/In%20collaboration%20with-Heritage%20Commission-0E6B4F?style=flat-square)
 
 🎓 **Graduation Project** · College of Computer and Information Sciences, Princess Nourah bint Abdulrahman University · 2025 – 2026
 
 🎓 **مشروع تخرج** · كلية علوم الحاسب والمعلومات، جامعة الأميرة نورة بنت عبدالرحمن
+
+🏆 **3rd Place**, Bachelor's Graduation Projects, College of Computer and Information Sciences, PNU
+
+🏆 **المركز الثالث** في مشاريع تخرج البكالوريوس، كلية علوم الحاسب والمعلومات، جامعة الأميرة نورة
 
 [English](#english) · [العربية](#arabic)
 
@@ -35,7 +41,9 @@ The project directly supports **Saudi Vision 2030** goals in preserving and digi
 
 ## Key Highlights
 
-- 🇸🇦 **Built for Saudi heritage**: to our knowledge, the first Arabic text-to-2D-to-3D generation pipeline dedicated to Saudi cultural objects. Leading commercial tools (Luma Genie, Meshy AI, Scenario) are English-first and offer no Saudi cultural grounding.
+- 🏆 **Award-winning**: won **3rd place** among Bachelor's graduation projects at the College of Computer and Information Sciences, Princess Nourah bint Abdulrahman University.
+- 🤝 **In collaboration with the Saudi Heritage Commission**: the Commission provided part of the project's data, and Mathlooth took part in the Commission's **Digital Heritage Exhibition**.
+- 🏺 **Built for Saudi heritage**: to our knowledge, the first Arabic text-to-2D-to-3D generation pipeline dedicated to Saudi cultural objects. Leading commercial tools (Luma Genie, Meshy AI, Scenario) are English-first and offer no Saudi cultural grounding.
 - 🗂️ **Our own dataset, built from scratch**: no existing dataset contained Saudi heritage objects with paired text, images and 3D models, so we collected, described, cleaned and aligned one ourselves, then expanded it **from ~300 to ~5,000 multimodal samples** through augmentation.
 - 🧠 **Saudi Heritage Knowledge Graph**: a neuro-symbolic layer storing each object's materials, form, functional parts, ornaments and cultural context, used to enrich the user's prompt with accurate cultural facts before generation.
 - 🧩 **Novel Cultural Alignment Loss (CAL)**: a new training objective we introduced that keeps the generated 3D object semantically consistent with the cultural description.
@@ -62,7 +70,7 @@ The project directly supports **Saudi Vision 2030** goals in preserving and digi
 
 ## The Dataset
 
-Existing datasets lacked Saudi heritage objects, their cultural meaning, and paired text, 2D and 3D data for the same item. We built our own in three phases: **2D image acquisition**, **description generation** (baseline and knowledge-graph-rewritten captions, verified by human quality checks), and **3D object generation**. The dataset covers categories such as coffee and serving tools, incense burners, furniture, traditional dress and footwear, jewelry and traditional food.
+Existing datasets lacked Saudi heritage objects, their cultural meaning, and paired text, 2D and 3D data for the same item. Part of the source data was provided by the **Saudi Heritage Commission**. We built our own in three phases: **2D image acquisition**, **description generation** (baseline and knowledge-graph-rewritten captions, verified by human quality checks), and **3D object generation**. The dataset covers categories such as coffee and serving tools, incense burners, furniture, traditional dress and footwear, jewelry and traditional food.
 
 ![Samples of the 3D dataset](assets/dataset_3d_samples.jpg)
 
@@ -154,7 +162,9 @@ Supervised by **Dr. Nuha Aldausari**
 
 ## أبرز ما يميّز المشروع
 
-- 🇸🇦 **مصمَّم للتراث السعودي**: بحسب علمنا، أول مسار توليد من النص العربي إلى صورة ثنائية الأبعاد ثم إلى نموذج ثلاثي الأبعاد مخصص للقطع التراثية السعودية، في حين أن الأدوات التجارية الرائدة تدعم الإنجليزية أساساً ولا تراعي الخصوصية الثقافية السعودية.
+- 🏆 **مشروع حائز على جائزة**: حصل على **المركز الثالث** في مشاريع تخرج البكالوريوس بكلية علوم الحاسب والمعلومات في جامعة الأميرة نورة بنت عبدالرحمن.
+- 🤝 **بالشراكة مع هيئة التراث**: وفّرت الهيئة جزءاً من بيانات المشروع، وشارك مثلوث في **معرض التراث الرقمي** التابع للهيئة.
+- 🏺 **مصمَّم للتراث السعودي**: بحسب علمنا، أول مسار توليد من النص العربي إلى صورة ثنائية الأبعاد ثم إلى نموذج ثلاثي الأبعاد مخصص للقطع التراثية السعودية، في حين أن الأدوات التجارية الرائدة تدعم الإنجليزية أساساً ولا تراعي الخصوصية الثقافية السعودية.
 - 🗂️ **بيانات بنيناها من الصفر**: لم تكن هناك أي مجموعة بيانات تضم القطع التراثية السعودية مع نصوصها وصورها ونماذجها ثلاثية الأبعاد معاً، فجمعناها ووصفناها ونظّفناها وربطناها بأنفسنا، ثم وسّعناها **من نحو 300 إلى نحو 5,000 عينة متعددة الوسائط**.
 - 🧠 **رسم معرفي للتراث السعودي**: طبقة تحفظ لكل قطعة خاماتها وشكلها وأجزاءها وزخارفها وسياقها الثقافي، وتُستخدم لإثراء وصف المستخدم بمعلومات ثقافية دقيقة قبل التوليد.
 - 🧩 **دالة خسارة جديدة للمواءمة الثقافية (CAL)**: هدف تدريبي جديد قدّمناه يحافظ على اتساق النموذج ثلاثي الأبعاد مع الوصف الثقافي.
